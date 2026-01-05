@@ -9,7 +9,13 @@
     /*background-color: #e4d7d7;*/
   min-height: 100vh;
   padding: 2rem;
+    min-height: 100vh;
+  padding: 2rem;
+  
+
 }
+
+
 #bg-video {
     position: fixed;
     top: 0;
@@ -36,7 +42,7 @@
 }
 
 a {
-  background: linear-gradient(135deg, #7B5CFF, #9E84FF);
+ 
   
   border: none;
   border-radius: 10px;
@@ -71,17 +77,22 @@ section {
     min-height: 100vh;
 }
 
+
 .cards {
   grid-template-columns:1fr 1fr;
   display: grid;
   gap: 20px;
   max-width: 900px;
   margin: 50px auto;
-  backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
+  
+   
+  
+ 
+  
+ 
   
 }
-.card2, .card3, .card4, .cards{
+.card2, .card3, .card4, .card5,.cards{
   padding: 2rem;
   border-radius: 12px;
   
@@ -98,7 +109,7 @@ section {
 .card1 {
   
   background:transparent;
-  background: linear-gradient(135deg, #7B5CFF, #9E84FF);
+   background: rgba(26,26,26,0.8);
   
   grid-column: 1 / -1;
   border-radius: 12px;
@@ -152,7 +163,8 @@ section {
 .card2 {
   
   background: rgba(26,26,26,0.8);
-   background: linear-gradient(135deg, #7B5CFF, #9E84FF);
+   
+   
     border-radius: 15px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.4), 0 0 20px rgba(0,255,200,0.2); 
     backdrop-filter: blur(10px); 
@@ -160,26 +172,21 @@ section {
     
 }
 .card3 {
-  background: linear-gradient(135deg, #7B5CFF, #9E84FF);
+   background: rgba(26,26,26,0.8);
   
   
 }
 .card4 {
-  background: linear-gradient(135deg, #7B5CFF, #9E84FF);
+   background: rgba(26,26,26,0.8);
   
   }
 .card5 {
-  background: linear-gradient(135deg, #7B5CFF, #9E84FF);
+   background: rgba(26,26,26,0.8);
   
 }
 
 
 
-
-
-/* aqui va la parte del about me*/
-/*aqui van las skills */
-/*portafolio*/
 
 
 
@@ -230,7 +237,7 @@ section {
 }
 .card-carrusel:hover {
   transform: scale(1.09);   
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* sombra más intensa */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); 
 }
 
 .img2 {
@@ -243,14 +250,18 @@ section {
 }
 .titulo-carrusel {
   text-align: center;
-  font-size: 1.4rem; 
-  color: #4da6ff;         
+  font-size: 1.2rem; 
+  color: #4da6ff; 
+  color: #ffffff;        
   font-weight: 600;
 }
 
 .descripcion2 {
   font-size: 0.85rem; 
+  font-size: 0.85rem;
+  
   color: #813e64; 
+  color: #cfcfcf;
   margin: 4px 0;
   font-weight: 500;
   min-height: 35px; 
@@ -260,12 +271,13 @@ section {
 .btn-carrusel {
   align-self: center;
   padding: 6px 12px;
-  background-color: #FF9FD7;
-  border: 2px solid #eee7eb;
+ 
+   background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.25);
   border-radius: 12px;
   font-weight: 600;
   font-size: 0.85rem;
-  color: white;
+ 
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
@@ -275,10 +287,14 @@ section {
   background-color: #E1306C;
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-2px);
 }
 
 .card-interna-texto {
     background-color: #ffffff; 
+    background: rgba(26,26,26,0.8);
+    background: rgba(15,15,15,0.85);
     padding: 6px;
     border-radius: 0.2em;
     margin-top: -70px; 
@@ -299,6 +315,206 @@ section {
     transform: translateX(-50%);
   }
 }
+/*PARTE DE LAS SKILLS-------------------------------------------- */
+
+.skills-section {
+  margin: 80px auto;
+  max-width: 700px;
+}
+.skill img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
 
 
-/*contactame*/
+.skills-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+}
+.skills-line .skill {
+  width: 120px;        
+  height: 120px;
+  object-fit: contain;
+}
+
+.skill {
+  width: 70px;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+
+.skill-anim {
+  animation: float 4s ease-in-out infinite;
+}
+
+
+.skill-anim:nth-child(1) { animation-delay: 0s; }
+.skill-anim:nth-child(2) { animation-delay: 0.6s; }
+.skill-anim:nth-child(3) { animation-delay: 1.2s; }
+.skill-anim:nth-child(4) { animation-delay: 1.8s; }
+.skill-anim:nth-child(5) { animation-delay: 2.4s; }
+.skill-anim:nth-child(6) { animation-delay: 3s; }
+
+
+.skill:hover {
+  transform: scale(1.15);
+}
+
+
+.skill-static {
+  filter: grayscale(30%);
+  opacity: 0.85;
+}
+/* -------- SKILLS CARD -------- */
+
+#skills {
+  padding-top: 120px;
+  display: flex;
+  justify-content: center;
+}
+
+.skills-card {
+  width: 100%;
+  max-width: 1000px;
+  padding: 40px 30px;
+
+  background: rgba(20,20,20,0.75);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+}
+
+.skills-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+  color: white;
+  letter-spacing: 1px;
+}
+
+
+@keyframes float {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+
+/*SECTION CONTACTAME -------------------------------*/
+/* -------- CONTACT CARD -------- */
+
+#contacto {
+  padding-top: 120px;
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 900px;
+  height: 320px;
+  border-radius: 18px;
+  overflow: hidden;
+
+  background: url("imagenes/contact-bg.jpg") center / cover no-repeat;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+  align-items: center;       
+  text-align: center;
+
+}
+
+.contact-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(20,20,20,0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  padding: 40px;
+  color: white;
+  font-family: var(--font-main);
+}
+
+.contact-overlay h2 {
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+
+.contact-overlay p {
+  max-width: 600px;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.9;
+  margin-bottom: 25px;
+  justify-content: center;   
+  align-items: center;
+}
+
+.contact-buttons {
+  display: flex;
+  gap: 16px;
+  
+}
+
+.btn-contact {
+  padding: 12px 28px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.25);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.btn-contact:hover {
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-3px);
+}
+.contact-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 6px;
+}
+
+.icon-contact {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.icon-contact img {
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.icon-contact:hover {
+  background: rgba(255,255,255,0.3);
+  transform: translateY(-4px) scale(1.05);
+}
+
