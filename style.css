@@ -517,4 +517,19 @@ section {
   background: rgba(255,255,255,0.3);
   transform: translateY(-4px) scale(1.05);
 }
+/* ======== RESPONSIVE ======== */
+
+
+
+
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  .contenedor {
+    flex-direction: column;
+  }
+}
 
