@@ -4,12 +4,12 @@ const dataProyectos = {
   "Plantas IA": {
     titulo: "Detección de Plantas",
     desc: "Identificación de plantas: proyecto enfocado en el reconocimiento de diferentes tipos de plantas y maleza dentro de una gama previamente establecida. Utiliza redes neuronales profundas para la clasificación de imágenes y emplea estrategias como data augmentation, técnicas de limpieza de imágenes, filtros convolucionales y herramientas de evaluación como accuracy, matriz de confusión, test score, entre otras métricas para medir el rendimiento del modelo.",
-    link: "#"
+    link: "https://colab.research.google.com/drive/1pOooj5gxHnlByZPCnzNbbQ1_GvIcJd8u?usp=sharing"
   },
   "Placas IA": {
     titulo: "Detección de Placas",
     desc: "Detección de placas vehiculares: proyecto basado en inteligencia artificial que identifica y reconoce placas a partir de imágenes de vehículos. Utiliza técnicas de procesamiento de imágenes y aprendizaje automático para realizar la detección de manera precisa. Tecnologías utilizadas: Python, Computer Vision y Machine Learning.",
-    link: "#"
+    link: "https://colab.research.google.com/drive/1datRJOmd4OW-cZESeTmiZCtxjDNRH_Yr?usp=sharing"
   },
   "Crédito ML": {
     titulo: "Riesgo Crediticio",
@@ -19,12 +19,12 @@ const dataProyectos = {
   "Análisis Médico": {
     titulo: "Análisis Médico",
     desc: "Detección de muestras histológicas de próstata: proyecto académico basado en inteligencia artificial, donde a partir de imágenes de muestras histológicas se analizan sus atributos y características geométricas para determinar, con un alto porcentaje de precisión, la detección de posibles anomalías. Tecnologías utilizadas: Machine Learning y Computer Vision, sk.learn.",
-    link: "#"
+    link: "https://colab.research.google.com/drive/1574ugnAzStSVBFgye2cuwioh-MkMCr1z?usp=sharing"
   },
   "Adidas": {
     titulo: "Campaña Adidas",
     desc: "Landing Page Adidas: página publicitaria que cuenta con animaciones desarrolladas en CSS, HTML y JavaScript, entre otras tecnologías. Posee catálogo de productos y un carrito de reservas, ofreciendo una experiencia dinámica e interactiva para el usuario.",
-    link: "#"
+    link: "https://romedavidbenavides.github.io/LandAdidas/"
   },
   "Cabañas": {
     titulo: "Sistema de Cabañas",
@@ -34,7 +34,7 @@ const dataProyectos = {
   "E-commerce": {
     titulo: "E-commerce",
     desc: "“E-Commerce”, es una página web con enfoque minimalista que aplica tecnologías como Bootstrap, HTML, CSS y JavaScript. Está compuesta por cinco páginas web integradas, que incluyen carrito de compras, catálogo y exhibición de productos, integración de backend, canal de pagos y destaca por su creatividad..",
-    link: "#"
+    link: "https://romedavidbenavides.github.io/e-commerce-postres/"
   },
   "Web App": {
     titulo: "Web App",
