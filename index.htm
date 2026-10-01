@@ -3,142 +3,309 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David Benavides | Portfolio</title>
+  <title>David Benavides | Portafolio</title>
+  <meta name="description" content="David Benavides Restrepo - Ingeniero Electrónico y Desarrollador Full Stack.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- NAV -->
+<header class="nav">
+  <a href="#inicio" class="nav-logo">DB<span class="highlight">_</span></a>
+  <button class="nav-toggle" aria-label="Menú" onclick="document.body.classList.toggle('menu-open')">☰</button>
+  <nav class="nav-links">
+    <a href="#experiencia">Experiencia</a>
+    <a href="#trabajo">Trabajo actual</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#skills">Skills</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
+
 <!-- HERO -->
-<section class="hero">
+<section class="hero" id="inicio">
   <div class="container">
-    <img src="imagenes/david.jpg" alt="David" class="photo">
+    <img src="imagenes/david.jpg" alt="David Benavides" class="photo">
 
     <div class="terminal">
       <span class="line">> Hola, soy <span class="highlight">David Benavides</span></span>
-      <span class="line">> Backend Developer | AI Student</span>
-      <span class="line">> Construyo APIs, lógica y soluciones escalables</span>
-      <span class="line">> Transformando ideas en productos digitales</span>
+      <span class="line">> Ingeniero Electrónico | Desarrollador Full Stack</span>
+      <span class="line">> Desarrollador Web en La Cocreadora, Bogotá</span>
+      <span class="line">> Cursando Máster en Inteligencia Artificial</span>
     </div>
   </div>
 
   <div class="cta">
-    <a href="#about" class="btn">Ver más ↓</a>
+    <a href="#experiencia" class="btn">Ver más ↓</a>
   </div>
 </section>
 
-<!-- SOBRE MI -->
-<section id="about" class="timeline-section">
-  <h2>Mi camino</h2>
+<!-- PERFIL -->
+<section class="perfil reveal">
+  <h2>Perfil</h2>
+  <p>
+    Desarrollador Full Stack con formación en Ingeniería Electrónica, cursando un Máster en Inteligencia Artificial.
+    Experiencia en desarrollo de aplicaciones web, diseño de APIs, sistemas backend, bases de datos y
+    automatización de procesos con Python. Trabajo con programación orientada a objetos, Git y Scrum.
+  </p>
+  <ul class="perfil-datos">
+    <li><span class="highlight">Ubicación:</span> Colombia</li>
+    <li><span class="highlight">Idiomas:</span> Español (nativo), Inglés (B1)</li>
+    <li><span class="highlight">Correo:</span> benavidesrestrepodavid@gmail.com</li>
+  </ul>
+</section>
+
+<!-- EXPERIENCIA -->
+<section id="experiencia" class="timeline-section">
+  <h2>Experiencia</h2>
 
   <div class="timeline">
 
-    <div class="timeline-item">
+    <div class="timeline-item reveal">
       <div class="timeline-content">
-        <h3>Ingeniería Electrónica</h3>
-        <p>Base sólida en lógica, análisis de sistemas y resolución de problemas complejos.</p>
+        <span class="fecha">Jul 2026 – Actualidad</span>
+        <h3>Desarrollador Web</h3>
+        <p class="empresa">La Cocreadora · Bogotá</p>
+        <ul>
+          <li>Actualización y mantenimiento de la plataforma interna.</li>
+          <li>39 intervenciones al mes sobre la plataforma.</li>
+          <li>Mejora de la experiencia de usuario y optimización de soluciones internas.</li>
+          <li>Configuración de la plataforma para un proyecto de capacitación de 800 estudiantes (12 clases por bootcamp).</li>
+          <li>Soporte técnico a usuarios.</li>
+        </ul>
       </div>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item reveal">
       <div class="timeline-content">
-        <h3>Transición al Desarrollo</h3>
-        <p>Formación como desarrollador Full Stack y enfoque en backend con APIs y bases de datos.</p>
+        <span class="fecha">Ene 2026 – Actualidad</span>
+        <h3>Desarrollador Web y Marketing</h3>
+        <p class="empresa">Motel Las Cabañas</p>
+        <ul>
+          <li>Desarrollo de 3 soluciones: sistema de reconocimiento vehicular con cámaras, sitio web y la aplicación CabanApp.</li>
+          <li>Control de más de 11.500 registros de ocupación de cabañas.</li>
+          <li>Reportes de vehículos que ingresan, mejorando el control de seguridad.</li>
+          <li>Gestión de marketing digital del negocio.</li>
+        </ul>
       </div>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item reveal">
       <div class="timeline-content">
-        <h3>Máster en Inteligencia Artificial</h3>
-        <p>Especialización en Machine Learning y soluciones basadas en datos.</p>
+        <span class="fecha">Independiente</span>
+        <h3>Desarrollador Web Freelance</h3>
+        <p class="empresa">La Bonanza</p>
+        <ul>
+          <li>Desarrollo web como trabajador independiente.</li>
+        </ul>
       </div>
     </div>
 
-    <div class="timeline-item">
+    <div class="timeline-item reveal">
       <div class="timeline-content">
-        <h3>Hoy</h3>
-        <p>Desarrollador enfocado en construir APIs, integrar sistemas y crear soluciones escalables.</p>
+        <span class="fecha">Jun 2024 – Jun 2025</span>
+        <h3>Analista de Monitoreo</h3>
+        <p class="empresa">Tecno Shop · Pasto</p>
+        <ul>
+          <li>Guía a estudiantes en proyectos de desarrollo web, mejorando interfaces y experiencia de usuario con Git y GitHub.</li>
+          <li>Acompañamiento de procesos técnicos con buenas prácticas y metodología Scrum.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="timeline-item reveal">
+      <div class="timeline-content">
+        <span class="fecha">Ene 2022 – Dic 2023</span>
+        <h3>Ingeniero del Departamento Técnico</h3>
+        <p class="empresa">SEPAL S.A. · Pasto</p>
+        <ul>
+          <li>Análisis de datos de consumo energético: reducción del 15% en errores de facturación con modelos de predicción.</li>
+          <li>Estudios semanales del alumbrado público para mejorar cobertura y eficiencia energética.</li>
+          <li>Automatizaciones en Python para la organización de bases de datos.</li>
+        </ul>
       </div>
     </div>
 
   </div>
 </section>
 
-<!-- PROYECTOS -->
-<div class="projects-wrapper">
+<!-- EDUCACIÓN -->
+<section class="educacion">
+  <h2>Educación</h2>
+  <div class="edu-grid">
+    <div class="edu-card reveal">
+      <span class="fecha">Desde Oct 2024</span>
+      <h3>Máster en Inteligencia Artificial</h3>
+      <p>Universidad Internacional de Valencia · España</p>
+    </div>
+    <div class="edu-card reveal">
+      <span class="fecha">Oct 2025 – Ene 2026</span>
+      <h3>Desarrollador Web Full Stack</h3>
+      <p>Generation Colombia</p>
+    </div>
+    <div class="edu-card reveal">
+      <span class="fecha">Ene 2015 – Dic 2021</span>
+      <h3>Ingeniero Electrónico</h3>
+      <p>Institución Universitaria de Envigado</p>
+    </div>
+  </div>
+</section>
 
-<section class="projects-3d">
+<!-- TRABAJO ACTUAL -->
+<section id="trabajo" class="showcase">
+  <h2>Trabajo actual</h2>
+
+  <!-- LA COCREADORA -->
+  <article class="show-item reveal">
+    <div class="mockup browser tilt">
+      <div class="browser-bar">
+        <span class="dots"><i></i><i></i><i></i></span>
+        <span class="url">innes.lacocreadora.com</span>
+      </div>
+      <div class="screen">
+        <img src="imagenes/cocreadora_imagen1.png" alt="Plataforma INNES de La Cocreadora">
+      </div>
+    </div>
+    <div class="show-info">
+      <span class="show-tag">La Cocreadora · Bogotá · Desarrollador Web</span>
+      <h3>Plataforma INNES</h3>
+      <p>Plataforma interna de formación. Me encargo de su actualización, mantenimiento y configuración.</p>
+      <ul>
+        <li>39 intervenciones al mes sobre la plataforma.</li>
+        <li>Configuración del proyecto de capacitación para 800 estudiantes, con 12 clases por bootcamp.</li>
+        <li>Mejora de la experiencia de usuario y soporte técnico.</li>
+      </ul>
+      <a href="https://innes.lacocreadora.com/login" target="_blank" class="btn-link">Ir a la plataforma ↗</a>
+    </div>
+  </article>
+
+  <!-- SITIO WEB LAS CABAÑAS -->
+  <article class="show-item reverse reveal">
+    <div class="mockup phone tilt">
+      <span class="notch"></span>
+      <div class="screen">
+        <img src="imagenes/motel_img.png" alt="Sitio web Las Cabañas en móvil">
+      </div>
+    </div>
+    <div class="show-info">
+      <span class="show-tag">Motel Las Cabañas · Desarrollador Web y Marketing</span>
+      <h3>Sitio web Las Cabañas</h3>
+      <p>Sitio web del motel con catálogo de cabañas, búsqueda por número o nombre y filtros por categoría.</p>
+      <ul>
+        <li>Catálogo con filtros: sencillas, románticas, jacuzzi, grupales, premium, deluxe y más.</li>
+        <li>Diseño adaptado a dispositivos móviles.</li>
+        <li>Canal principal de la estrategia de marketing digital.</li>
+      </ul>
+      <a href="https://lascabanaspasto.com.co/" target="_blank" class="btn-link">Visitar sitio ↗</a>
+    </div>
+  </article>
+
+  <!-- CABANAPP -->
+  <article class="show-item reveal">
+    <div class="mockup phone tilt">
+      <span class="notch"></span>
+      <div class="screen slides">
+        <img src="imagenes/cabanapp_img1.png" alt="CabanApp inicio" class="active" style="object-position: 50% 50%">
+        <img src="imagenes/cabanapp_img2.png" alt="CabanApp agenda de reservas" style="object-position: 0 0">
+      </div>
+    </div>
+    <div class="show-info">
+      <span class="show-tag">Motel Las Cabañas · Aplicación web</span>
+      <h3>CabanApp</h3>
+      <p>Aplicación de control de reservas con agenda diaria por cabaña: ocupación y turnos de aseo en una línea de tiempo.</p>
+      <ul>
+        <li>Control de más de 11.500 registros de cabañas y su ocupación.</li>
+        <li>Agenda visual por cabaña y por hora.</li>
+        <li>Registro de reservas y notificaciones para el administrador.</li>
+      </ul>
+      <a href="https://cabanapp.vercel.app/" target="_blank" class="btn-link">Abrir CabanApp ↗</a>
+    </div>
+  </article>
+
+  <!-- SISTEMA DE RECONOCIMIENTO VEHICULAR -->
+  <article class="show-item reverse reveal">
+    <div class="mockup stack tilt">
+      <div class="browser cam">
+        <div class="browser-bar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span class="url">Sistema IA - Control Vehicular</span>
+          <span class="live">● EN VIVO</span>
+        </div>
+        <div class="screen">
+          <img src="imagenes/vehicular_img3.png" alt="Detección de vehículos en cámara">
+          <span class="scan"></span>
+        </div>
+      </div>
+      <div class="browser report">
+        <div class="browser-bar">
+          <span class="dots"><i></i><i></i><i></i></span>
+          <span class="url">Reporte de vehículos</span>
+        </div>
+        <div class="screen">
+          <img src="imagenes/vehicular_img2.png" alt="Reporte de eventos de vehículos">
+        </div>
+      </div>
+    </div>
+    <div class="show-info">
+      <span class="show-tag">Motel Las Cabañas · Inteligencia Artificial</span>
+      <h3>Reconocimiento vehicular</h3>
+      <p>Sistema que analiza el video de las cámaras del motel, detecta los vehículos que entran y salen y genera un reporte de cada evento.</p>
+      <ul>
+        <li>Conteo automático de entradas y salidas por zonas de detección.</li>
+        <li>Registro de fecha, hora, tipo y color de cada vehículo, con su foto.</li>
+        <li>Reporte de eventos descargable en Excel.</li>
+        <li>Mejora del control de seguridad del establecimiento.</li>
+      </ul>
+    </div>
+  </article>
+
+</section>
+
+<!-- PROYECTOS -->
+<section id="proyectos" class="projects-3d">
 
   <!-- ===== IA ===== -->
   <h2>Análisis de Datos & IA</h2>
+  <p class="section-sub">Haz clic en una tarjeta para ver el detalle.</p>
 
-  <div class="projects-wrapper">
-
-    <div class="container3d" id="carousel1">
-
-      <div class="tarjeta" data-id="plantas" style="--i:0">
-        <img src="imagenes/imagen3.png">
-        <h3>Plantas IA</h3>
-      </div>
-
-      <div class="tarjeta" data-id="placas" style="--i:1">
-        <img src="imagenes/imagen4.png">
-        <h3>Placas IA</h3>
-      </div>
-
-      <div class="tarjeta" data-id="credito" style="--i:2">
-        <img src="imagenes/imagen5.png">
-        <h3>Crédito ML</h3>
-      </div>
-
-      <div class="tarjeta" data-id="medico" style="--i:3">
-        <img src="imagenes/imagen2.png">
-        <h3>Análisis Médico</h3>
-      </div>
-
+  <div class="container3d" style="--n:4">
+    <div class="tarjeta" data-id="plantas" style="--i:0">
+      <img src="imagenes/imagen3.png" alt="Plantas IA">
+      <h3>Plantas IA</h3>
     </div>
-
+    <div class="tarjeta" data-id="placas" style="--i:1">
+      <img src="imagenes/imagen4.png" alt="Placas IA">
+      <h3>Placas IA</h3>
+    </div>
+    <div class="tarjeta" data-id="credito" style="--i:2">
+      <img src="imagenes/imagen5.png" alt="Crédito ML">
+      <h3>Crédito ML</h3>
+    </div>
+    <div class="tarjeta" data-id="medico" style="--i:3">
+      <img src="imagenes/imagen2.png" alt="Análisis Médico">
+      <h3>Análisis Médico</h3>
+    </div>
   </div>
-
 
   <!-- ===== FULL STACK ===== -->
   <h2>Full Stack Development</h2>
 
-  <div class="projects-wrapper">
-
-    <div class="container3d" id="carousel2">
-
-      <div class="tarjeta" data-id="adidas" style="--i:0">
-        <img src="imagenes/imagen8.webp">
-        <h3>Adidas</h3>
-      </div>
-
-      <div class="tarjeta" data-id="cabanas" style="--i:1">
-        <img src="imagenes/imagen7.jpg">
-        <h3>Cabañas</h3>
-      </div>
-
-      <div class="tarjeta" data-id="ecommerce" style="--i:2">
-        <img src="imagenes/imagen1.png">
-        <h3>E-commerce</h3>
-      </div>
-
-      <div class="tarjeta" data-id="webapp" style="--i:3">
-        <img src="imagenes/imagen6.png">
-        <h3>Web App</h3>
-      </div>
-
+  <div class="container3d" style="--n:3">
+    <div class="tarjeta" data-id="adidas" style="--i:0">
+      <img src="imagenes/imagen8.webp" alt="Adidas">
+      <h3>Adidas</h3>
     </div>
-
+    <div class="tarjeta" data-id="ecommerce" style="--i:1">
+      <img src="imagenes/imagen1.png" alt="E-commerce">
+      <h3>E-commerce</h3>
+    </div>
+    <div class="tarjeta" data-id="webapp" style="--i:2">
+      <img src="imagenes/imagen6.png" alt="Web App">
+      <h3>Web App</h3>
+    </div>
   </div>
 
- 
-</div>
-
 </section>
-
-
-
-
 
 <!-- SKILLS -->
 <section id="skills">
@@ -146,59 +313,65 @@
     <h2 class="skills-title">Skills</h2>
 
     <div class="skills-line">
-      <img src="imagenes/python3.png" class="skill skill-anim">
-      <img src="imagenes/tensorFlow.png" class="skill skill-anim">
-      <img src="imagenes/css3.png" class="skill skill-anim">
-      <img src="imagenes/html3.png" class="skill skill-anim">
-      <img src="imagenes/javascript3.png" class="skill skill-anim">
-      <img src="imagenes/java3.png" class="skill skill-anim">
-
-      <img src="imagenes/git3.png" class="skill skill-static">
-      <img src="imagenes/boostrap3.png" class="skill skill-static">
-      <img src="imagenes/react3.png" class="skill skill-static">
-      <img src="imagenes/ai.png" class="skill skill-static">
+      <img src="imagenes/python3.png" class="skill" alt="Python">
+      <img src="imagenes/tensorFlow.png" class="skill" alt="TensorFlow">
+      <img src="imagenes/css3.png" class="skill" alt="CSS">
+      <img src="imagenes/html3.png" class="skill" alt="HTML">
+      <img src="imagenes/javascript3.png" class="skill" alt="JavaScript">
+      <img src="imagenes/java3.png" class="skill" alt="Java">
+      <img src="imagenes/git3.png" class="skill" alt="Git">
+      <img src="imagenes/boostrap3.png" class="skill" alt="Bootstrap">
+      <img src="imagenes/react3.png" class="skill" alt="React">
+      <img src="imagenes/ai.png" class="skill" alt="IA">
     </div>
+
+    <ul class="tags">
+      <li>Spring Boot</li><li>Node.js</li><li>Angular</li><li>SQL</li><li>APIs REST</li>
+      <li>GitHub</li><li>Scrum</li><li>Machine Learning</li><li>Deep Learning</li><li>Data Analysis</li>
+    </ul>
   </div>
 </section>
 
 <!-- CONTACTO -->
 <section id="contacto">
-  <div class="contact-card">
-    <div class="contact-overlay">
-      <h2>¿Trabajamos juntos?</h2>
-      <p>
-        Si tienes un proyecto, una idea o necesitas apoyo en desarrollo web
-        o inteligencia artificial, hablemos.
-      </p>
+  <div class="contact-card reveal">
+    <h2>Contacto</h2>
+    <p>benavidesrestrepodavid@gmail.com · +57 324 6151330</p>
 
-      <div class="contact-buttons">
-        <a href="mailto:benavidesrestrepodavid@gmail.com" class="icon-contact">
-          <img src="imagenes/correo.png">
-        </a>
-
-        <a href="https://wa.me/573246151330" target="_blank" class="icon-contact">
-          <img src="imagenes/wssp.jpg">
-        </a>
-
-        <a href="https://www.linkedin.com/in/david-benavides-restrepo-1a82552b4/" target="_blank" class="icon-contact">
-          <img src="imagenes/linkedin.png">
-        </a>
-      </div>
+    <div class="contact-buttons">
+      <a href="mailto:benavidesrestrepodavid@gmail.com" class="icon-contact" aria-label="Correo">
+        <img src="imagenes/correo.png" alt="Correo">
+      </a>
+      <a href="https://wa.me/573246151330" target="_blank" class="icon-contact" aria-label="WhatsApp">
+        <img src="imagenes/wssp.jpg" alt="WhatsApp">
+      </a>
+      <a href="https://www.linkedin.com/in/david-benavides-restrepo-1a82552b4/" target="_blank" class="icon-contact" aria-label="LinkedIn">
+        <img src="imagenes/linkedin.png" alt="LinkedIn">
+      </a>
     </div>
   </div>
 </section>
 
+<footer class="footer">David Benavides Restrepo · 2026</footer>
+
 <!-- PANEL FLOTANTE -->
-<div id="overlay" class="overlay hidden">
+<div id="overlay" class="overlay hidden" onclick="if (event.target === this) cerrarPanel()">
   <div class="project-panel">
 
     <button class="close-btn" onclick="cerrarPanel()">✕</button>
 
+    <img id="panel-img" class="panel-img" alt="">
+    <span id="panel-tag" class="panel-tag"></span>
     <h2 id="panel-title">Título</h2>
-    
-    <p id="panel-desc" class="typing-fast">
-      Descripción del proyecto...
-    </p>
+    <p id="panel-desc">Descripción del proyecto...</p>
+    <ul id="panel-logros" class="panel-logros"></ul>
+
+    <figure id="panel-extra" class="panel-extra hidden">
+      <img id="panel-extra-img" alt="">
+      <figcaption id="panel-extra-cap"></figcaption>
+    </figure>
+
+    <p id="panel-tech" class="panel-tech"></p>
 
     <a id="panel-link" href="#" target="_blank" class="btn-panel">
       Ver proyecto
